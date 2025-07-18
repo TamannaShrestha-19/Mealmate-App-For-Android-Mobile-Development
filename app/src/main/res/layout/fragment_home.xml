@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_greet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_greet"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/purple_200"
+            android:text="Hi Tamanna,\n\n\nWelcome to Mealmate!!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp"/>
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tv_recipes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18sp"
+        android:fontFamily="@font/myfont"
+        android:text="Recipes"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/cv_greet"
+        app:layout_constraintTop_toBottomOf="@+id/cv_greet"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_view_recipes"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_recipes"/>
+    <TextView
+        android:id="@+id/tv_mealplan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/myfont"
+        android:text="MealPlan"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tv_recipes"
+        app:layout_constraintTop_toBottomOf="@id/rec_view_recipes"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mealplan"/>
+
+
+    <Button
+        android:id="@+id/btn_add_default_recipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Add Default Recipes"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "451626384012",
+    "project_id": "mealmate-ismt-sec-b",
+    "storage_bucket": "mealmate-ismt-sec-b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:451626384012:android:2a80fa4b4d5a7e097559a9",
+        "android_client_info": {
+          "package_name": "np.com.ismt.Tamanna_b.MealMateApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCO0YpHUo9q5ORpwltn84e-kenWaYIBGbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
