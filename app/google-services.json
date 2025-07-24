@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:185240186031:android:de022627225ade7eaa785a",
+        "mobilesdk_app_id": "yourmobilesdkappid",
         "android_client_info": {
           "package_name": "np.com.ismt.sample.mealmate"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAQMRkGuScTKq2ZLlElqtN51EjyiEaBNBU"
+          "current_key": "your_key"
         }
       ],
       "services": {
